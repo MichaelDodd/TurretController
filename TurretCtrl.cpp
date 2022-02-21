@@ -128,7 +128,7 @@ bool TurretCtrl::Goto(int PositionDmd)
     if (PositionDmd != Position)
     {
       // Are we going forwards (1->2->3) or backwards (1->8->7)?
-      uint8_t distance = (PositionDmd - Position);
+      int8_t distance = (PositionDmd - Position);
       if (distance <= 0) 
          distance = distance + MAX_TOOL_POSITIONS;
 
